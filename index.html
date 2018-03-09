@@ -1,0 +1,13430 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Search Family Names</title>
+
+	<style type="text/css">
+
+		.container {
+
+			max-width: 640px;
+
+		}
+
+
+
+		.header-logo {
+
+			margin-left: 10px;
+
+		}
+
+
+
+		img.align-center {
+
+			display: block;
+
+			margin: auto;
+
+			margin-top: 10px;
+
+		}
+
+
+
+		.input-field {
+
+			width: 450px;
+
+			margin: auto;
+
+			outline: none;
+
+			height: 2rem;
+
+		}
+
+
+
+		::placeholder {
+
+			color: #009933;
+
+			opacity: 0.7;
+
+			font-style: italic;
+
+			top: 18px;
+
+		}
+
+
+
+		table {
+
+			width: 350px;
+
+			margin: auto;
+
+		}
+
+
+
+		.footer {
+
+			font-size: 14px;
+
+			font-family: Arial, Helvetica, sans-serif;
+
+			font-style: italic;
+
+			font-weight: bold;
+
+			margin: 10px;
+
+		}
+
+
+
+		#source1,
+
+		#source2 {
+
+			font-size: 12px;
+
+			font-family: Arial, Helvetica, sans-serif;
+
+			margin: 10px;
+
+		}
+
+
+
+		a:link {
+
+			color: #228B22;
+
+			text-decoration: underline;
+
+		}
+
+
+
+		a:visited {
+
+			color: #228B22;
+
+			text-decoration: underline;
+
+		}
+
+
+
+		a:hover {
+
+			color: #FF1493;
+
+			text-decoration: underline;
+
+		}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+	<div class="container">
+
+		<div class="header-logo">
+
+			<img src="https://gardens.ucr.edu/images/NEWUCRBGlogo200.jpg" width="137px" height="171px" class="align-center">
+
+		</div>
+
+		<h4 class="center-align">
+
+		Family Names Search
+
+	</h4>
+
+		<br/>
+
+
+
+		<div class="row">
+
+			<form class="col s12">
+
+				<div class="input-field col s12" id="text-field">
+
+					<input type="search" id="filterInput" placeholder="Type the 4 letter code or family name here...">
+
+				</div>
+
+			</form>
+
+		</div>
+
+		<br/>
+
+		<div id="message"></div>
+
+		<br/>
+
+		<table class="highlight">
+
+			<thead>
+
+				<tr>
+
+					<th>4 Letter Abbreviation </th>
+
+					<th>Family Name</th>
+
+				</tr>
+
+			</thead>
+
+			<tbody id="familyTable">
+
+				<tr>
+
+					<td>ABIE</td>
+
+					<td>Abietaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ABOL</td>
+
+					<td>Abolbodaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ABRO</td>
+
+					<td>Abrophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACAC</td>
+
+					<td>Acaciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACAL</td>
+
+					<td>Acalyphaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACAN</td>
+
+					<td>Acanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACAR</td>
+
+					<td>Acarnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACAT</td>
+
+					<td>Acanthochlamydaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACER</td>
+
+					<td>Aceraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACHA</td>
+
+					<td>Achariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACHR</td>
+
+					<td>Achradaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACHT</td>
+
+					<td>Achatocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACHY</td>
+
+					<td>Achyranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACMO</td>
+
+					<td>Acmopylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACON</td>
+
+					<td>Aconitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACOR</td>
+
+					<td>Acoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACRI</td>
+
+					<td>Acristaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACRO</td>
+
+					<td>Acrostichaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACTA</td>
+
+					<td>Actaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACTI</td>
+
+					<td>Actinidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACTP</td>
+
+					<td>Actiniopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ACTS</td>
+
+					<td>Actinostrobaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ADEN</td>
+
+					<td>Adenogrammaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ADIA</td>
+
+					<td>Adiantaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ADOX</td>
+
+					<td>Adoxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEGC</td>
+
+					<td>Aegicerataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEGI</td>
+
+					<td>Aegialitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEGL</td>
+
+					<td>Aegilopaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEGN</td>
+
+					<td>Aeginetiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEGP</td>
+
+					<td>Aegiphilaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AESC</td>
+
+					<td>Aesculaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AEXT</td>
+
+					<td>Aextoxicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGAP</td>
+
+					<td>Agapanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGAV</td>
+
+					<td>Agavaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGDE</td>
+
+					<td>Agdestidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGIA</td>
+
+					<td>Agialidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGRI</td>
+
+					<td>Agrimoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AGRO</td>
+
+					<td>Agrostidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AILA</td>
+
+					<td>Ailanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AIZO</td>
+
+					<td>Aizoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AJUG</td>
+
+					<td>Ajugaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AKAN</td>
+
+					<td>Akaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALAN</td>
+
+					<td>Alangiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALCH</td>
+
+					<td>Alchemillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALDR</td>
+
+					<td>Aldrovandaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALIS</td>
+
+					<td>Alismataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALLI</td>
+
+					<td>Alliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALLN</td>
+
+					<td>Allioniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALLO</td>
+
+					<td>Allophylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALO+</td>
+
+					<td>Aloaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALOP</td>
+
+					<td>Alopecuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALPI</td>
+
+					<td>Alpiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALSE</td>
+
+					<td>Alseuosmiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALSI</td>
+
+					<td>Alsinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALSO</td>
+
+					<td>Alsodeiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALSP</td>
+
+					<td>Alsophilaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALST</td>
+
+					<td>Alstroemeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALTI</td>
+
+					<td>Altingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ALZA</td>
+
+					<td>Alzateaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMAL</td>
+
+					<td>Amaryllidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMAR</td>
+
+					<td>Amaranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMBO</td>
+
+					<td>Amborellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMBR</td>
+
+					<td>Ambrosiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMEN</td>
+
+					<td>Amentotaxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMMA</td>
+
+					<td>Ammanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMMI</td>
+
+					<td>Ammiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMOM</td>
+
+					<td>Amomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMPE</td>
+
+					<td>Ampelopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMYG</td>
+
+					<td>Amygdalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AMYR</td>
+
+					<td>Amyridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANAC</td>
+
+					<td>Anacardiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANAG</td>
+
+					<td>Anagallidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANAR</td>
+
+					<td>Anarthriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANCH</td>
+
+					<td>Anchusaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANCI</td>
+
+					<td>Ancistrocladaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANDM</td>
+
+					<td>Andromedaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANDP</td>
+
+					<td>Andropogonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANDR</td>
+
+					<td>Androstachyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANDS</td>
+
+					<td>Androsynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANEM</td>
+
+					<td>Anemiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANEN</td>
+
+					<td>Anemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANER</td>
+
+					<td>Anemarrhenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANGE</td>
+
+					<td>Angelicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANGI</td>
+
+					<td>Angiopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANIS</td>
+
+					<td>Anisophylleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANNO</td>
+
+					<td>Annonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANOM</td>
+
+					<td>Anomochloaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANOP</td>
+
+					<td>Anopteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANRE</td>
+
+					<td>Anrederaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTB</td>
+
+					<td>Anthobolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTD</td>
+
+					<td>Antidesmataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTH</td>
+
+					<td>Anthericaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTI</td>
+
+					<td>Antirrhinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTM</td>
+
+					<td>Anthemidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTO</td>
+
+					<td>Antoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTR</td>
+
+					<td>Antrophyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ANTX</td>
+
+					<td>Anthoxanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APAR</td>
+
+					<td>Aparinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APHA</td>
+
+					<td>Aphanopetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APHL</td>
+
+					<td>Aphloiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APHY</td>
+
+					<td>Aphyllanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>API+</td>
+
+					<td>Apiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APOC</td>
+
+					<td>Apocynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APOD</td>
+
+					<td>Apodanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APOE</td>
+
+					<td>Aposeridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APON</td>
+
+					<td>Aponogetonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APOR</td>
+
+					<td>Aporusaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APOS</td>
+
+					<td>Apostasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>APTA</td>
+
+					<td>Aptandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AQUG</td>
+
+					<td>Aquilegiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AQUI</td>
+
+					<td>Aquifoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AQUL</td>
+
+					<td>Aquilariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AR++</td>
+
+					<td>Araceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARAB</td>
+
+					<td>Arabidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARAD</td>
+
+					<td>Aralidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARAG</td>
+
+					<td>Aragoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARAL</td>
+
+					<td>Araliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARAU</td>
+
+					<td>Araucariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARBU</td>
+
+					<td>Arbutaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARCD</td>
+
+					<td>Arceuthidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARCE</td>
+
+					<td>Arceuthobiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARCS</td>
+
+					<td>Arctostaphylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARCT</td>
+
+					<td>Arctotidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARDI</td>
+
+					<td>Ardisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AREC</td>
+
+					<td>Arecaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARGO</td>
+
+					<td>Argophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARIR</td>
+
+					<td>Arisaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARIS</td>
+
+					<td>Aristolochiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARIT</td>
+
+					<td>Aristoteliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARJO</td>
+
+					<td>Arjonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARME</td>
+
+					<td>Armeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARTE</td>
+
+					<td>Artemisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARTO</td>
+
+					<td>Artocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARUL</td>
+
+					<td>Arundinellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ARUN</td>
+
+					<td>Arundinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASAR</td>
+
+					<td>Asaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASCL</td>
+
+					<td>Asclepiadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASCY</td>
+
+					<td>Ascyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPA</td>
+
+					<td>Asparagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPE</td>
+
+					<td>Asperulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPH</td>
+
+					<td>Asphodelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPI</td>
+
+					<td>Aspidistraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPL</td>
+
+					<td>Aspleniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPR</td>
+
+					<td>Asperellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASPT</td>
+
+					<td>Aspalathaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTC</td>
+
+					<td>Astrocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTE</td>
+
+					<td>Asteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTL</td>
+
+					<td>Asteliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTN</td>
+
+					<td>Asteranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTP</td>
+
+					<td>Asteropeiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ASTR</td>
+
+					<td>Astragalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ATHA</td>
+
+					<td>Athanasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ATHE</td>
+
+					<td>Atherospermataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ATHY</td>
+
+					<td>Athyriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ATRI</td>
+
+					<td>Atriplicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ATRO</td>
+
+					<td>Atropaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AUCU</td>
+
+					<td>Aucubaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AURA</td>
+
+					<td>Aurantiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AUST</td>
+
+					<td>Austrobaileyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AUSX</td>
+
+					<td>Austrotaxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AVEN</td>
+
+					<td>Avenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AVER</td>
+
+					<td>Averrhoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AVET</td>
+
+					<td>Avetraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AVIC</td>
+
+					<td>Avicenniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AZAL</td>
+
+					<td>Azaleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AZIM</td>
+
+					<td>Azimaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>AZOL</td>
+
+					<td>Azollaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAEC</td>
+
+					<td>Baeckeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BALA</td>
+
+					<td>Balanophoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BALM</td>
+
+					<td>Balsameaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BALP</td>
+
+					<td>Balanopaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BALS</td>
+
+					<td>Balsaminaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BALT</td>
+
+					<td>Balanitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAMB</td>
+
+					<td>Bambusaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BANK</td>
+
+					<td>Banksiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BARB</td>
+
+					<td>Barbeyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BARC</td>
+
+					<td>Barclayaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BARN</td>
+
+					<td>Barbaceniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BARR</td>
+
+					<td>Barringtoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BARU</td>
+
+					<td>Barbeuiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BASE</td>
+
+					<td>Basellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAT+</td>
+
+					<td>Bataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAUE</td>
+
+					<td>Baueraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAUH</td>
+
+					<td>Bauhiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BAXT</td>
+
+					<td>Baxteriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BEGO</td>
+
+					<td>Begoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BEHN</td>
+
+					<td>Behniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BELA</td>
+
+					<td>Belangeraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BELL</td>
+
+					<td>Belloniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BEMB</td>
+
+					<td>Bembiciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERB</td>
+
+					<td>Berberidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERD</td>
+
+					<td>Berberidopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERR</td>
+
+					<td>Berryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERS</td>
+
+					<td>Bersamaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERT</td>
+
+					<td>Bertyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BERZ</td>
+
+					<td>Berzeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BESL</td>
+
+					<td>Besleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BET+</td>
+
+					<td>Betaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BETU</td>
+
+					<td>Betulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BIEB</td>
+
+					<td>Biebersteiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BIFA</td>
+
+					<td>Bifariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BIGN</td>
+
+					<td>Bignoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BISC</td>
+
+					<td>Bischofiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BIX+</td>
+
+					<td>Bixaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLAK</td>
+
+					<td>Blakeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLAN</td>
+
+					<td>Blandfordiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLAT</td>
+
+					<td>Blattiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLEC</td>
+
+					<td>Blechnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLEP</td>
+
+					<td>Blepharocaryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLIT</td>
+
+					<td>Blitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BLYX</td>
+
+					<td>Blyxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOER</td>
+
+					<td>Boerlagellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOLB</td>
+
+					<td>Bolbitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOLI</td>
+
+					<td>Bolivariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOMB</td>
+
+					<td>Bombacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BONN</td>
+
+					<td>Bonnetiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BONT</td>
+
+					<td>Bontiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOOP</td>
+
+					<td>Boopidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BORA</td>
+
+					<td>Boraginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BORO</td>
+
+					<td>Boroniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BORS</td>
+
+					<td>Borassaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BORY</td>
+
+					<td>Boryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOTD</td>
+
+					<td>Botryodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOTR</td>
+
+					<td>Botrychiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOUG</td>
+
+					<td>Bougainvilleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BOWE</td>
+
+					<td>Boweniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRAC</td>
+
+					<td>Bracteocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRAS</td>
+
+					<td>Brassicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRET</td>
+
+					<td>Bretschneideraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BREX</td>
+
+					<td>Brexiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRMO</td>
+
+					<td>Bromaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BROM</td>
+
+					<td>Bromeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BROW</td>
+
+					<td>Browalliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRUL</td>
+
+					<td>Brunelliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRUN</td>
+
+					<td>Bruniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRUO</td>
+
+					<td>Brunoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRUS</td>
+
+					<td>Brunsvigiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BRYO</td>
+
+					<td>Bryoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUCH</td>
+
+					<td>Buchneraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUCI</td>
+
+					<td>Bucidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUDD</td>
+
+					<td>Buddlejaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUGL</td>
+
+					<td>Buglossaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BULB</td>
+
+					<td>Bulbocodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUME</td>
+
+					<td>Bumeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUPL</td>
+
+					<td>Bupleuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BURC</td>
+
+					<td>Burchardiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BURM</td>
+
+					<td>Burmanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BURS</td>
+
+					<td>Burseraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUTN</td>
+
+					<td>Butneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUTO</td>
+
+					<td>Butomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUTT</td>
+
+					<td>Buttneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BUX+</td>
+
+					<td>Buxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BYBL</td>
+
+					<td>Byblidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>BYTT</td>
+
+					<td>Byttneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CABO</td>
+
+					<td>Cabombaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CACL</td>
+
+					<td>Calceolariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CACT</td>
+
+					<td>Cactaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAES</td>
+
+					<td>Caesalpiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALA</td>
+
+					<td>Caladiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALC</td>
+
+					<td>Callicomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALE</td>
+
+					<td>Calectasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALG</td>
+
+					<td>Calligonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALH</td>
+
+					<td>Callitrichaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALI</td>
+
+					<td>Callitraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALL</td>
+
+					<td>Callaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALM</td>
+
+					<td>Calamaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALN</td>
+
+					<td>Calendulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALO</td>
+
+					<td>Calochortaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALP</td>
+
+					<td>Calophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALR</td>
+
+					<td>Calyceraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALT</td>
+
+					<td>Calthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CALY</td>
+
+					<td>Calycanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAMB</td>
+
+					<td>Cambogiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAME</td>
+
+					<td>Camelliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAMN</td>
+
+					<td>Campynemataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAMP</td>
+
+					<td>Campanulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANA</td>
+
+					<td>Canacomyricaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANB</td>
+
+					<td>Cannabaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANE</td>
+
+					<td>Canellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANN</td>
+
+					<td>Cannaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANO</td>
+
+					<td>Canotiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANP</td>
+
+					<td>Canopodaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CANS</td>
+
+					<td>Cansjeraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAPA</td>
+
+					<td>Caprariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAPP</td>
+
+					<td>Capparaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAPR</td>
+
+					<td>Caprifoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARD</td>
+
+					<td>Cardiopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARI</td>
+
+					<td>Caricaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARL</td>
+
+					<td>Carlemanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARN</td>
+
+					<td>Carlinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARO</td>
+
+					<td>Carpodetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARP</td>
+
+					<td>Carpinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARR</td>
+
+					<td>Caryocaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARS</td>
+
+					<td>Carissaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CART</td>
+
+					<td>Cartonemataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARU</td>
+
+					<td>Carduaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CARY</td>
+
+					<td>Caryophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CASI</td>
+
+					<td>Cassiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CASL</td>
+
+					<td>Castelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CASP</td>
+
+					<td>Cassipoureaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CASS</td>
+
+					<td>Cassythaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAST</td>
+
+					<td>Castaneaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CASU</td>
+
+					<td>Casuarinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CATE</td>
+
+					<td>Catesbaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CATH</td>
+
+					<td>Cathedraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CAUC</td>
+
+					<td>Caucalidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CECR</td>
+
+					<td>Cecropiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEDL</td>
+
+					<td>Cedrelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEDR</td>
+
+					<td>Cedraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CELA</td>
+
+					<td>Celastraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CELO</td>
+
+					<td>Celosiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CELT</td>
+
+					<td>Celtidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CENC</td>
+
+					<td>Cenchrinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CENP</td>
+
+					<td>Centroplacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CENR</td>
+
+					<td>Centaureaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CENT</td>
+
+					<td>Centrolepidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEP+</td>
+
+					<td>Cepaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEPH</td>
+
+					<td>Cephalotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEPN</td>
+
+					<td>Cephalanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEPX</td>
+
+					<td>Cephalotaxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERA</td>
+
+					<td>Ceratophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERB</td>
+
+					<td>Cerberaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERC</td>
+
+					<td>Cercidiphyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERD</td>
+
+					<td>Cercodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERE</td>
+
+					<td>Cereaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERI</td>
+
+					<td>Cerinthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERO</td>
+
+					<td>Ceroxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERP</td>
+
+					<td>Ceratopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERR</td>
+
+					<td>Cercocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERS</td>
+
+					<td>Cerastiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CERT</td>
+
+					<td>Ceratoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEST</td>
+
+					<td>Cestraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CEVA</td>
+
+					<td>Cevalliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAC</td>
+
+					<td>Chamelauciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAE</td>
+
+					<td>Chaeturaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAI</td>
+
+					<td>Chailletiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAL</td>
+
+					<td>Chamelauciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAM</td>
+
+					<td>Chamaedoreaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHAU</td>
+
+					<td>Chaunochitonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHEI</td>
+
+					<td>Cheiropleuriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHEL</td>
+
+					<td>Chelidoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHEN</td>
+
+					<td>Chenopodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHEO</td>
+
+					<td>Chelonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHES</td>
+
+					<td>Cheilosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHET</td>
+
+					<td>Cheilanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHIM</td>
+
+					<td>Chimonanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHIN</td>
+
+					<td>Chingithamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHIO</td>
+
+					<td>Chionographidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHIR</td>
+
+					<td>Chironiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHIT</td>
+
+					<td>Chiranthodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHLD</td>
+
+					<td>Chloridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHLN</td>
+
+					<td>Chloanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHLO</td>
+
+					<td>Chloranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHON</td>
+
+					<td>Chondrosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHRI</td>
+
+					<td>Christenseniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHRS</td>
+
+					<td>Chrysospleniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CHRY</td>
+
+					<td>Chrysobalanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CICE</td>
+
+					<td>Ciceraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CICH</td>
+
+					<td>Cichoriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CIMI</td>
+
+					<td>Cimicifugaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CINC</td>
+
+					<td>Cinchonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CIRA</td>
+
+					<td>Circaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CIRC</td>
+
+					<td>Circaeasteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CISS</td>
+
+					<td>Cissaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CIST</td>
+
+					<td>Cistaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CITR</td>
+
+					<td>Citraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CLEM</td>
+
+					<td>Clematidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CLEO</td>
+
+					<td>Cleomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CLET</td>
+
+					<td>Clethraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CLUS</td>
+
+					<td>Clusiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CNEO</td>
+
+					<td>Cneoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CNES</td>
+
+					<td>Cnestidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CNIC</td>
+
+					<td>Cnicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COBA</td>
+
+					<td>Cobaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COCH</td>
+
+					<td>Cochlospermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COCO</td>
+
+					<td>Cocosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COFF</td>
+
+					<td>Coffeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COLC</td>
+
+					<td>Colchicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COLE</td>
+
+					<td>Coleanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COLG</td>
+
+					<td>Coleogynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COLO</td>
+
+					<td>Colocasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COLU</td>
+
+					<td>Columelliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COMB</td>
+
+					<td>Combretaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COMM</td>
+
+					<td>Commelinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COMO</td>
+
+					<td>Comocladiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COMP</td>
+
+					<td>Compositae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COMS</td>
+
+					<td>Compsoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CONA</td>
+
+					<td>Conantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COND</td>
+
+					<td>Coriandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CONL</td>
+
+					<td>Convallariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CONN</td>
+
+					<td>Connaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CONO</td>
+
+					<td>Conostylidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CONV</td>
+
+					<td>Convolvulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORA</td>
+
+					<td>Coriariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORC</td>
+
+					<td>Corynocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORD</td>
+
+					<td>Cordiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORE</td>
+
+					<td>Coreopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORI</td>
+
+					<td>Coridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORK</td>
+
+					<td>Corokiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORL</td>
+
+					<td>Corydalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORM</td>
+
+					<td>Corispermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORN</td>
+
+					<td>Cornaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORO</td>
+
+					<td>Coronillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORP</td>
+
+					<td>Coryphaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORR</td>
+
+					<td>Corrigiolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORS</td>
+
+					<td>Corsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CORY</td>
+
+					<td>Corylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COST</td>
+
+					<td>Costaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COTY</td>
+
+					<td>Cotyledonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COUB</td>
+
+					<td>Coutoubeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COUL</td>
+
+					<td>Coulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>COUT</td>
+
+					<td>Coutareaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRAS</td>
+
+					<td>Crassulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CREN</td>
+
+					<td>Crescentiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRES</td>
+
+					<td>Cressaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRIN</td>
+
+					<td>Crinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CROC</td>
+
+					<td>Crocaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CROO</td>
+
+					<td>Croomiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CROS</td>
+
+					<td>Crossosomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CROT</td>
+
+					<td>Crotonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRUC</td>
+
+					<td>Cruciferae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRYC</td>
+
+					<td>Cryptocorynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRYG</td>
+
+					<td>Cryptogrammaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRYM</td>
+
+					<td>Cryptomeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRYP</td>
+
+					<td>Crypteroniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CRYT</td>
+
+					<td>Cryptaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CTEN</td>
+
+					<td>Ctenolophonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CUCU</td>
+
+					<td>Cucurbitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CULC</td>
+
+					<td>Culcitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CUNN</td>
+
+					<td>Cunninghamiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CUNO</td>
+
+					<td>Cunoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CUPR</td>
+
+					<td>Cupressaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CURC</td>
+
+					<td>Curcumaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CURT</td>
+
+					<td>Curtisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CUSC</td>
+
+					<td>Cuscutaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYAA</td>
+
+					<td>Cyananthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYAL</td>
+
+					<td>Cyanellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYAN</td>
+
+					<td>Cyanastraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYAT</td>
+
+					<td>Cyatheaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYCA</td>
+
+					<td>Cycadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYCC</td>
+
+					<td>Cyclocheilaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYCL</td>
+
+					<td>Cyclanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYCR</td>
+
+					<td>Cyclantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYDO</td>
+
+					<td>Cydoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYMO</td>
+
+					<td>Cymodoceaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYNA</td>
+
+					<td>Cynanchaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYND</td>
+
+					<td>Cynodontaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYNG</td>
+
+					<td>Cynoglossaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYNO</td>
+
+					<td>Cynomoriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYNR</td>
+
+					<td>Cynaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYNS</td>
+
+					<td>Cynosuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYPC</td>
+
+					<td>Cyphocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYPE</td>
+
+					<td>Cyperaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYPH</td>
+
+					<td>Cyphiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYPR</td>
+
+					<td>Cypripediaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYRD</td>
+
+					<td>Cyrtandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYRI</td>
+
+					<td>Cyrillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYRT</td>
+
+					<td>Cyrtanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYSP</td>
+
+					<td>Cystopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYST</td>
+
+					<td>Cystodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYTI</td>
+
+					<td>Cytinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>CYTS</td>
+
+					<td>Cytisaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DACR</td>
+
+					<td>Dacrycarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DACT</td>
+
+					<td>Dactylanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DACY</td>
+
+					<td>Dacrydiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DALB</td>
+
+					<td>Dalbergiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DALE</td>
+
+					<td>Daleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAMA</td>
+
+					<td>Damasoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DANA</td>
+
+					<td>Danaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAPH</td>
+
+					<td>Daphniphyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAPN</td>
+
+					<td>Daphnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DASY</td>
+
+					<td>Dasypogonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DATI</td>
+
+					<td>Datiscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DATU</td>
+
+					<td>Daturaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAUC</td>
+
+					<td>Daucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAVA</td>
+
+					<td>Davalliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAVI</td>
+
+					<td>Davidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DAVS</td>
+
+					<td>Davidsoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DECA</td>
+
+					<td>Decaisneaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DEER</td>
+
+					<td>Deeringiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DEGE</td>
+
+					<td>Degeneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DELI</td>
+
+					<td>Delimaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DELP</td>
+
+					<td>Delphiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DEND</td>
+
+					<td>Dendrophthoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DENN</td>
+
+					<td>Dennstaedtiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DESF</td>
+
+					<td>Desfontainiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DETA</td>
+
+					<td>Detariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIAL</td>
+
+					<td>Dialypetalanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIAN</td>
+
+					<td>Dianellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIAP</td>
+
+					<td>Diapensiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIAT</td>
+
+					<td>Dianthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICH</td>
+
+					<td>Dichapetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICK</td>
+
+					<td>Dicksoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICL</td>
+
+					<td>Diclidantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICN</td>
+
+					<td>Dichondraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICR</td>
+
+					<td>Dicranopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DICT</td>
+
+					<td>Dictamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIDI</td>
+
+					<td>Didiereaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIDM</td>
+
+					<td>Didymocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIDY</td>
+
+					<td>Didymelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIEG</td>
+
+					<td>Diegodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIER</td>
+
+					<td>Diervillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIGI</td>
+
+					<td>Digitalidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DILA</td>
+
+					<td>Dilatridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DILL</td>
+
+					<td>Dilleniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIOC</td>
+
+					<td>Dioncophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIOM</td>
+
+					<td>Diosmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DION</td>
+
+					<td>Dionaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIOP</td>
+
+					<td>Diospyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIOS</td>
+
+					<td>Dioscoreaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPC</td>
+
+					<td>Dipterocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPE</td>
+
+					<td>Dipentodontaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPH</td>
+
+					<td>Diphylleiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPL</td>
+
+					<td>Diplolaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPR</td>
+
+					<td>Diplarchaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPS</td>
+
+					<td>Dipsacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIPT</td>
+
+					<td>Dipteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DIRA</td>
+
+					<td>Dirachmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DISA</td>
+
+					<td>Disanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DISE</td>
+
+					<td>Diselmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DODO</td>
+
+					<td>Dodonaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DOMB</td>
+
+					<td>Dombeyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DONA</td>
+
+					<td>Donatiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DORS</td>
+
+					<td>Dorsteniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DORT</td>
+
+					<td>Dortmannaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DORY</td>
+
+					<td>Doryanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRAB</td>
+
+					<td>Drabaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRAC</td>
+
+					<td>Dracaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRAT</td>
+
+					<td>Dracontiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRIM</td>
+
+					<td>Drymidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DROP</td>
+
+					<td>Drosophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DROS</td>
+
+					<td>Droseraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRYA</td>
+
+					<td>Dryadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRYN</td>
+
+					<td>Drynariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DRYO</td>
+
+					<td>Dryopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DUAB</td>
+
+					<td>Duabangaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DUCK</td>
+
+					<td>Duckeodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DURA</td>
+
+					<td>Durantaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>DYSP</td>
+
+					<td>Dysphaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EBEN</td>
+
+					<td>Ebenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ECDE</td>
+
+					<td>Ecdeiocoleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ECHA</td>
+
+					<td>Echinariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ECHI</td>
+
+					<td>Echiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ECHN</td>
+
+					<td>Echinopaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ECHR</td>
+
+					<td>Echinariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EHRE</td>
+
+					<td>Ehretiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EHRH</td>
+
+					<td>Ehrhartaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELAC</td>
+
+					<td>Elaeocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELAE</td>
+
+					<td>Elaeagnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELAP</td>
+
+					<td>Elaphoglossaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELAT</td>
+
+					<td>Elatinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELEG</td>
+
+					<td>Elegiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELLI</td>
+
+					<td>Ellisiophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELLS</td>
+
+					<td>Ellisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELOD</td>
+
+					<td>Elodeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ELYT</td>
+
+					<td>Elytranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EMBE</td>
+
+					<td>Embeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EMBL</td>
+
+					<td>Emblingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EMMO</td>
+
+					<td>Emmotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EMPE</td>
+
+					<td>Empetraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ENCE</td>
+
+					<td>Encephalartaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ENGE</td>
+
+					<td>Engelhardtiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ENHA</td>
+
+					<td>Enhalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EPAC</td>
+
+					<td>Epacridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EPHE</td>
+
+					<td>Ephedraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EPHM</td>
+
+					<td>Ephemeraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EPIL</td>
+
+					<td>Epilobiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EPIM</td>
+
+					<td>Epimediaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EQUI</td>
+
+					<td>Equisetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERAG</td>
+
+					<td>Eragrostidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EREM</td>
+
+					<td>Eremolepidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERES</td>
+
+					<td>Eremosynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERIC</td>
+
+					<td>Ericaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERIG</td>
+
+					<td>Eriogonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERIN</td>
+
+					<td>Erinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERIO</td>
+
+					<td>Eriocaulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERIS</td>
+
+					<td>Eriospermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EROD</td>
+
+					<td>Erodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYC</td>
+
+					<td>Erycibaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYN</td>
+
+					<td>Eryngiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYP</td>
+
+					<td>Erythrospermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYR</td>
+
+					<td>Erythroniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYS</td>
+
+					<td>Erysimaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYT</td>
+
+					<td>Erythropalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ERYX</td>
+
+					<td>Erythroxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ESCA</td>
+
+					<td>Escalloniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ESCH</td>
+
+					<td>Eschscholziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUCD</td>
+
+					<td>Eucomidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUCO</td>
+
+					<td>Eucommiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUCR</td>
+
+					<td>Eucryphiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUGE</td>
+
+					<td>Eugeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUON</td>
+
+					<td>Euonymaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPA</td>
+
+					<td>Eupatoriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPH</td>
+
+					<td>Euphorbiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPN</td>
+
+					<td>Euphroniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPO</td>
+
+					<td>Eupomatiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPS</td>
+
+					<td>Euphrasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUPT</td>
+
+					<td>Eupteleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EURY</td>
+
+					<td>Euryalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUST</td>
+
+					<td>Eustrephaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EUTO</td>
+
+					<td>Eutocaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EVOL</td>
+
+					<td>Evolvulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EXBU</td>
+
+					<td>Esbucklandiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>EXOC</td>
+
+					<td>Exocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FAB+</td>
+
+					<td>Fabaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FAG+</td>
+
+					<td>Fagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FALC</td>
+
+					<td>Falcatifoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FERU</td>
+
+					<td>Ferulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FEST</td>
+
+					<td>Festucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FIC+</td>
+
+					<td>Ficaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FITZ</td>
+
+					<td>Fitzroyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FLAC</td>
+
+					<td>Flacourtiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FLAG</td>
+
+					<td>Flagellariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FLIN</td>
+
+					<td>Flindersiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FOET</td>
+
+					<td>Foetidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FORE</td>
+
+					<td>Forestieraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FOTH</td>
+
+					<td>Fothergillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FOUQ</td>
+
+					<td>Fouquieriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAG</td>
+
+					<td>Fragariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAK</td>
+
+					<td>Frankeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAL</td>
+
+					<td>Fraxinellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAN</td>
+
+					<td>Francoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAU</td>
+
+					<td>Frangulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRAX</td>
+
+					<td>Fraxinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FREY</td>
+
+					<td>Freycinetiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FRIT</td>
+
+					<td>Fritillariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FUCH</td>
+
+					<td>Fuchsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>FUMA</td>
+
+					<td>Fumariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GAIA</td>
+
+					<td>Gaiadendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALA</td>
+
+					<td>Galacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALD</td>
+
+					<td>Galedupaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALE</td>
+
+					<td>Galeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALI</td>
+
+					<td>Galiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALT</td>
+
+					<td>Galanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GALX</td>
+
+					<td>Galaxiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GARC</td>
+
+					<td>Garciniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GARD</td>
+
+					<td>Gardeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GARN</td>
+
+					<td>Gardneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GARR</td>
+
+					<td>Garryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GEIS</td>
+
+					<td>Geissolomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GEIT</td>
+
+					<td>Geitonoplesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GELS</td>
+
+					<td>Gelsemiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GENI</td>
+
+					<td>Geniostomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GENT</td>
+
+					<td>Gentianaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GEOF</td>
+
+					<td>Geofrroeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GEON</td>
+
+					<td>Geonomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GEOS</td>
+
+					<td>Geosiridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GERA</td>
+
+					<td>Geraniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GERR</td>
+
+					<td>Gerrardinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GESN</td>
+
+					<td>Gesneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GETH</td>
+
+					<td>Gethyllidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GILL</td>
+
+					<td>Gilliesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GINA</td>
+
+					<td>Ginalloaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GINK</td>
+
+					<td>Ginkgoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GISE</td>
+
+					<td>Gisekiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLAD</td>
+
+					<td>Gladiolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLAU</td>
+
+					<td>Glaucidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLEC</td>
+
+					<td>Glechomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLEI</td>
+
+					<td>Gleicheniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLIN</td>
+
+					<td>Glinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLOB</td>
+
+					<td>Globulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GLYC</td>
+
+					<td>Glyceriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GNAP</td>
+
+					<td>Gnaphaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GNET</td>
+
+					<td>Gnetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GNID</td>
+
+					<td>Gnidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOET</td>
+
+					<td>Goetzeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOMO</td>
+
+					<td>Gomortegaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOMP</td>
+
+					<td>Gomphiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOMR</td>
+
+					<td>Gomphrenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GONY</td>
+
+					<td>Gonystylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOOD</td>
+
+					<td>Goodeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GORD</td>
+
+					<td>Gordoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOUA</td>
+
+					<td>Gouaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GOUP</td>
+
+					<td>Goupiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRAD</td>
+
+					<td>Grammitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRAM</td>
+
+					<td>Gramineae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRAT</td>
+
+					<td>Gratiolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GREW</td>
+
+					<td>Grewiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GREY</td>
+
+					<td>Greyiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRIE</td>
+
+					<td>Grielaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRIN</td>
+
+					<td>Grindeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRIS</td>
+
+					<td>Griseliniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRON</td>
+
+					<td>Gronoviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GROS</td>
+
+					<td>Grossulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GRUB</td>
+
+					<td>Grubbiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GUAI</td>
+
+					<td>Guaiacanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GUET</td>
+
+					<td>Guettardaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GUNN</td>
+
+					<td>Gunneraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GUST</td>
+
+					<td>Gustaviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GUTT</td>
+
+					<td>Guttiferae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GYMN</td>
+
+					<td>Gymnogrammitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GYRC</td>
+
+					<td>Gyrocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>GYRO</td>
+
+					<td>Gyrostemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HACH</td>
+
+					<td>Hachetteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HAEM</td>
+
+					<td>Haemodoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HAEN</td>
+
+					<td>Haemanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HALC</td>
+
+					<td>Halocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HALE</td>
+
+					<td>Halesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HALO</td>
+
+					<td>Halophytaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HALP</td>
+
+					<td>Halophilaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HALR</td>
+
+					<td>Haloragaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HAMA</td>
+
+					<td>Hamamelidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HAME</td>
+
+					<td>Hameliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HANG</td>
+
+					<td>Hanguanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HAPT</td>
+
+					<td>Haptanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HARM</td>
+
+					<td>Harmandiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEBE</td>
+
+					<td>Hebenstretiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HECT</td>
+
+					<td>Hectorellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEDE</td>
+
+					<td>Hederaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEDR</td>
+
+					<td>Hedysaraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEDT</td>
+
+					<td>Hedyotidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEDY</td>
+
+					<td>Hedyosmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEIS</td>
+
+					<td>Heisteriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELA</td>
+
+					<td>Helianthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELC</td>
+
+					<td>Helicteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELD</td>
+
+					<td>Heloniadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELE</td>
+
+					<td>Heleniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELH</td>
+
+					<td>Helianthemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELI</td>
+
+					<td>Heliconiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELL</td>
+
+					<td>Helleboraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELM</td>
+
+					<td>Helminthostachyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELO</td>
+
+					<td>Helosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELP</td>
+
+					<td>Heliamphoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELT</td>
+
+					<td>Heliotropiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELW</td>
+
+					<td>Helwingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HELY</td>
+
+					<td>Helichrysaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEME</td>
+
+					<td>Hemerocallidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEMI</td>
+
+					<td>Hemionitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HEMM</td>
+
+					<td>Hemimeridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HENR</td>
+
+					<td>Henriqueziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HENS</td>
+
+					<td>Henslowiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HERI</td>
+
+					<td>Herniariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HERM</td>
+
+					<td>Hermanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HERN</td>
+
+					<td>Hernandiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HERR</td>
+
+					<td>Herreriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HESP</td>
+
+					<td>Hesperocallidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HETA</td>
+
+					<td>Heterantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HETE</td>
+
+					<td>Heteropyxidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HETS</td>
+
+					<td>Heterostylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIBB</td>
+
+					<td>Hibbertiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIBI</td>
+
+					<td>Hibiscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HILL</td>
+
+					<td>Hilleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIMA</td>
+
+					<td>Himantandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIPH</td>
+
+					<td>Hippophaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIPM</td>
+
+					<td>Hippomanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIPP</td>
+
+					<td>Hippuridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIPR</td>
+
+					<td>Hippocrateaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIPS</td>
+
+					<td>Hippocastanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HIRT</td>
+
+					<td>Hirtellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOLC</td>
+
+					<td>Holcaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOMA</td>
+
+					<td>Homaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOPK</td>
+
+					<td>Hopkinsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOPL</td>
+
+					<td>Hoplestigmataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HORD</td>
+
+					<td>Hordeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HORN</td>
+
+					<td>Hornschuchiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HORS</td>
+
+					<td>Hortensiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HORT</td>
+
+					<td>Hortoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOST</td>
+
+					<td>Hostaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HOUS</td>
+
+					<td>Houstoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HU++</td>
+
+					<td>Huaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUER</td>
+
+					<td>Huerteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUGO</td>
+
+					<td>Hugoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUMB</td>
+
+					<td>Humbertiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUMI</td>
+
+					<td>Humiriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUMU</td>
+
+					<td>Humulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HUPE</td>
+
+					<td>Huperziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYAC</td>
+
+					<td>Hyacinthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDA</td>
+
+					<td>Hydatellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDC</td>
+
+					<td>Hydrocharitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDD</td>
+
+					<td>Hydropeltidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDG</td>
+
+					<td>Hydrogetonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDI</td>
+
+					<td>Hydrillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDL</td>
+
+					<td>Hydroleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDN</td>
+
+					<td>Hydnoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDO</td>
+
+					<td>Hydrocotylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDP</td>
+
+					<td>Hydrophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDR</td>
+
+					<td>Hydrangeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDS</td>
+
+					<td>Hydrastidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDT</td>
+
+					<td>Hydrostachyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYDY</td>
+
+					<td>Hydrophylacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYMC</td>
+
+					<td>Hymenocardiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYME</td>
+
+					<td>Hymenophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYMP</td>
+
+					<td>Hymenophyllopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYOS</td>
+
+					<td>Hyoscyamaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPA</td>
+
+					<td>Hyperantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPE</td>
+
+					<td>Hypecoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPL</td>
+
+					<td>Hypolepidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPO</td>
+
+					<td>Hypodematiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPP</td>
+
+					<td>Hypopityaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPR</td>
+
+					<td>Hypericaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPS</td>
+
+					<td>Hypseocharitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>HYPX</td>
+
+					<td>Hypoxidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ICAC</td>
+
+					<td>Icacinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IDIO</td>
+
+					<td>Idiospermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ILIC</td>
+
+					<td>Ilicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ILLE</td>
+
+					<td>Illecebraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ILLG</td>
+
+					<td>Illigeraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ILLI</td>
+
+					<td>Illiciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IMPA</td>
+
+					<td>Impatientaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IMPE</td>
+
+					<td>Imperatoriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>INOC</td>
+
+					<td>Inocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>INUL</td>
+
+					<td>Inulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IOD+</td>
+
+					<td>Iodaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IRIA</td>
+
+					<td>Iriarteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IRID</td>
+
+					<td>Iridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IRVI</td>
+
+					<td>Irvingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ISNA</td>
+
+					<td>Isnardiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ISOE</td>
+
+					<td>Isoetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ISOP</td>
+
+					<td>Isophysidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ITE+</td>
+
+					<td>Iteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IXI+</td>
+
+					<td>Ixiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IXIO</td>
+
+					<td>Ixioliriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>IXON</td>
+
+					<td>Ixonanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JAMB</td>
+
+					<td>Jamboliferaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JAPO</td>
+
+					<td>Japonoliriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JASI</td>
+
+					<td>Jasionaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JASM</td>
+
+					<td>Jasminaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JOHN</td>
+
+					<td>Johnsoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JOIN</td>
+
+					<td>Joinvilleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUGL</td>
+
+					<td>Juglandaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JULI</td>
+
+					<td>Julianiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUNC</td>
+
+					<td>Juncaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUNG</td>
+
+					<td>Juncaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUNI</td>
+
+					<td>Juniperaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUSS</td>
+
+					<td>Jussiaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>JUST</td>
+
+					<td>Justiciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KADS</td>
+
+					<td>Kadsuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KALI</td>
+
+					<td>Kaliphoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KALM</td>
+
+					<td>Kalmiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KANI</td>
+
+					<td>Kaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KIGG</td>
+
+					<td>Kiggelariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KING</td>
+
+					<td>Kingdoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KINI</td>
+
+					<td>Kingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KIRE</td>
+
+					<td>Kirengsehomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KIRK</td>
+
+					<td>Kirkiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KOBR</td>
+
+					<td>Kobresiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KOEB</td>
+
+					<td>Koeberliniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KOEL</td>
+
+					<td>Koelreuteriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>KRAM</td>
+
+					<td>Krameriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LABI</td>
+
+					<td>Labiatae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LACA</td>
+
+					<td>Lacandoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LACC</td>
+
+					<td>Lactucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LACH</td>
+
+					<td>Lachenaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LACI</td>
+
+					<td>Lacistemataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LACT</td>
+
+					<td>Lactoridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAGE</td>
+
+					<td>Lagerstroemiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAGO</td>
+
+					<td>Lagoeciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAGU</td>
+
+					<td>Laguraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAIS</td>
+
+					<td>Lasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAMI</td>
+
+					<td>Lamiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LANA</td>
+
+					<td>Lanariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LANG</td>
+
+					<td>Langsdorffiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LANT</td>
+
+					<td>Lantanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAPA</td>
+
+					<td>Lapageriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LARD</td>
+
+					<td>Lardizabalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LASI</td>
+
+					<td>Lasiopetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LATH</td>
+
+					<td>Lathyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAUR</td>
+
+					<td>Lauraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAWS</td>
+
+					<td>Lawsoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LAXM</td>
+
+					<td>Laxmanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LECY</td>
+
+					<td>Lecythidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LED+</td>
+
+					<td>Ledaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEDO</td>
+
+					<td>Ledocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEE+</td>
+
+					<td>Leeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEGU</td>
+
+					<td>Leguminosae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEIT</td>
+
+					<td>Leitneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEMN</td>
+
+					<td>Lemnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LENN</td>
+
+					<td>Lennoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LENS</td>
+
+					<td>Lentiscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LENT</td>
+
+					<td>Lentibulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEOI</td>
+
+					<td>Leoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEON</td>
+
+					<td>Leonticaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPA</td>
+
+					<td>Leptaulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPC</td>
+
+					<td>Lepidocerataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPD</td>
+
+					<td>Lepidothamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPI</td>
+
+					<td>Lepidobotryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPP</td>
+
+					<td>Lepidocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPR</td>
+
+					<td>Lepturaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPT</td>
+
+					<td>Leptospermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPU</td>
+
+					<td>Lepuropetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEPY</td>
+
+					<td>Lepidocaryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LEUC</td>
+
+					<td>Leucojaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIBO</td>
+
+					<td>Libocedraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LICA</td>
+
+					<td>Licaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIGU</td>
+
+					<td>Ligustraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LILA</td>
+
+					<td>Lilaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LILI</td>
+
+					<td>Liliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIMC</td>
+
+					<td>Limnocharitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIMD</td>
+
+					<td>Limodoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIME</td>
+
+					<td>Limeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIMN</td>
+
+					<td>Limnanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIMO</td>
+
+					<td>Limoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIMS</td>
+
+					<td>Limosellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIN+</td>
+
+					<td>Linaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LINA</td>
+
+					<td>Linariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LINB</td>
+
+					<td>Lindenbergiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIND</td>
+
+					<td>Lindsaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LINL</td>
+
+					<td>Lindleyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LINN</td>
+
+					<td>Linnaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LINR</td>
+
+					<td>Linderniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIPA</td>
+
+					<td>Liparidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIPP</td>
+
+					<td>Lippayaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIRD</td>
+
+					<td>Liriodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LIRI</td>
+
+					<td>Liriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LISS</td>
+
+					<td>Lissocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LITT</td>
+
+					<td>Littorellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOAS</td>
+
+					<td>Loasaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOBE</td>
+
+					<td>Lobeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOGA</td>
+
+					<td>Loganiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOLI</td>
+
+					<td>Loliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOMA</td>
+
+					<td>Lomandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOMR</td>
+
+					<td>Lomariopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LONI</td>
+
+					<td>Loniceraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPC</td>
+
+					<td>Lophiocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPE</td>
+
+					<td>Lopeziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPH</td>
+
+					<td>Lophiraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPL</td>
+
+					<td>Lophiolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPS</td>
+
+					<td>Lophosoriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPT</td>
+
+					<td>Lophophytaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOPX</td>
+
+					<td>Lophopyxidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LORA</td>
+
+					<td>Loranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOT+</td>
+
+					<td>Lotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOWI</td>
+
+					<td>Lowiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOXO</td>
+
+					<td>Loxogrammaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LOXS</td>
+
+					<td>Loxsomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LUPU</td>
+
+					<td>Lupulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LUXE</td>
+
+					<td>Luxemburgiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LUZU</td>
+
+					<td>Luzuriagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYCH</td>
+
+					<td>Lychnidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYCI</td>
+
+					<td>Lyciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYCO</td>
+
+					<td>Lycopodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYGI</td>
+
+					<td>Lyginiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYGO</td>
+
+					<td>Lygodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYGS</td>
+
+					<td>Lygodisodeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYSI</td>
+
+					<td>Lysimachiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>LYTH</td>
+
+					<td>Lythraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MACA</td>
+
+					<td>Macarisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MACK</td>
+
+					<td>Mackinlayaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MADI</td>
+
+					<td>Madiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAES</td>
+
+					<td>Maesaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAGN</td>
+
+					<td>Magnoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAL+</td>
+
+					<td>Malaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MALE</td>
+
+					<td>Malesherbiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MALO</td>
+
+					<td>Malortieaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MALP</td>
+
+					<td>Malpighiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MALV</td>
+
+					<td>Malvaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MANG</td>
+
+					<td>Mangiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MANI</td>
+
+					<td>Manicariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MARA</td>
+
+					<td>Marattiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MARC</td>
+
+					<td>Marcgraviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MARN</td>
+
+					<td>Marantaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MARR</td>
+
+					<td>Marathraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MARS</td>
+
+					<td>Marsileaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MART</td>
+
+					<td>Martyniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAST</td>
+
+					<td>Mastixiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MATO</td>
+
+					<td>Matoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MATR</td>
+
+					<td>Matricariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAUN</td>
+
+					<td>Maundiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MAYA</td>
+
+					<td>Mayacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEDE</td>
+
+					<td>Medeolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEDG</td>
+
+					<td>Medusagynaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEDU</td>
+
+					<td>Medusandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELA</td>
+
+					<td>Melanthiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELC</td>
+
+					<td>Melicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELI</td>
+
+					<td>Meliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELL</td>
+
+					<td>Melaleucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELM</td>
+
+					<td>Melastomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELN</td>
+
+					<td>Melianthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELO</td>
+
+					<td>Melochiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELP</td>
+
+					<td>Melanophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELR</td>
+
+					<td>Melampyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELS</td>
+
+					<td>Meliosmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MELT</td>
+
+					<td>Melittaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEME</td>
+
+					<td>Memecylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEND</td>
+
+					<td>Mendonciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MENI</td>
+
+					<td>Menispermaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MENT</td>
+
+					<td>Menthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MENY</td>
+
+					<td>Menyanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MENZ</td>
+
+					<td>Menziesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MERC</td>
+
+					<td>Mercurialaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MERE</td>
+
+					<td>Merenderaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MESE</td>
+
+					<td>Mesembryanthemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MESM</td>
+
+					<td>Mesembryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MESP</td>
+
+					<td>Mespilaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MESU</td>
+
+					<td>Mesuaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>META</td>
+
+					<td>Metaxyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>METS</td>
+
+					<td>Metasequoiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>METT</td>
+
+					<td>Metteniusaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MEYE</td>
+
+					<td>Meyeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MICB</td>
+
+					<td>Microbiotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MICC</td>
+
+					<td>Microcachrydaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MICN</td>
+
+					<td>Micrantheaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MICO</td>
+
+					<td>Miconiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MICR</td>
+
+					<td>Microcycadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MILI</td>
+
+					<td>Miliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MILU</td>
+
+					<td>Milulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MIMO</td>
+
+					<td>Mimosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MINU</td>
+
+					<td>Minuartiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MIRA</td>
+
+					<td>Mirabilidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MISO</td>
+
+					<td>Misodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MITR</td>
+
+					<td>Mitrastemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MIYO</td>
+
+					<td>Miyoshiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MLIS</td>
+
+					<td>Melissaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MODE</td>
+
+					<td>Modeccaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOHR</td>
+
+					<td>Mohriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOLL</td>
+
+					<td>Molluginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONA</td>
+
+					<td>Monachosoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOND</td>
+
+					<td>Monodoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONI</td>
+
+					<td>Monimiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONN</td>
+
+					<td>Montiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONO</td>
+
+					<td>Monotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONP</td>
+
+					<td>Monotropaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONS</td>
+
+					<td>Monsteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MONT</td>
+
+					<td>Montiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOR+</td>
+
+					<td>Moraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MORG</td>
+
+					<td>Moringaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MORI</td>
+
+					<td>Morinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOUR</td>
+
+					<td>Mouriraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MOUT</td>
+
+					<td>Moutabeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MUNT</td>
+
+					<td>Muntingiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MUS+</td>
+
+					<td>Musaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MUTI</td>
+
+					<td>Mutisiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYOD</td>
+
+					<td>Myodocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYOP</td>
+
+					<td>Myoporaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRB</td>
+
+					<td>Myrobalanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRC</td>
+
+					<td>Myristicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRI</td>
+
+					<td>Myricaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRO</td>
+
+					<td>Myrothamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRP</td>
+
+					<td>Myriophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRR</td>
+
+					<td>Myrrhiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRS</td>
+
+					<td>Myrsinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYRT</td>
+
+					<td>Myrtaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>MYST</td>
+
+					<td>Mystropetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NAGE</td>
+
+					<td>Nageiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NAJA</td>
+
+					<td>Najadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NAND</td>
+
+					<td>Nandinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NAPO</td>
+
+					<td>Napoleonaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NARC</td>
+
+					<td>Narcissaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NARD</td>
+
+					<td>Nardaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NART</td>
+
+					<td>Nartheciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NASS</td>
+
+					<td>Nassauviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NAUC</td>
+
+					<td>Naucleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NECT</td>
+
+					<td>Nectaropetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEGR</td>
+
+					<td>Negripteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEIL</td>
+
+					<td>Neilliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NELS</td>
+
+					<td>Nelsoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NELU</td>
+
+					<td>Nelumbonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEMA</td>
+
+					<td>Nemacladaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEOT</td>
+
+					<td>Neottiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEPE</td>
+
+					<td>Nepenthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEPH</td>
+
+					<td>Nephrolepidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEPT</td>
+
+					<td>Nepetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NESO</td>
+
+					<td>Nesogenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEUR</td>
+
+					<td>Neuradaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NEUW</td>
+
+					<td>Neuwiediaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NHAN</td>
+
+					<td>Nhandirobaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NICO</td>
+
+					<td>Nicotianaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NIGE</td>
+
+					<td>Nigellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NITR</td>
+
+					<td>Nitrariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NOLA</td>
+
+					<td>Nolanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NOLI</td>
+
+					<td>Nolinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NONA</td>
+
+					<td>Nonateliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NOPA</td>
+
+					<td>Nopaleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NORA</td>
+
+					<td>Noranteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NOTH</td>
+
+					<td>Nothofagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NUPH</td>
+
+					<td>Nupharaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NUYT</td>
+
+					<td>Nuytsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NYCN</td>
+
+					<td>Nyctanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NYCT</td>
+
+					<td>Nyctaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NYMP</td>
+
+					<td>Nymphaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NYP+</td>
+
+					<td>Nypaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>NYSS</td>
+
+					<td>Nyssaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OBOL</td>
+
+					<td>Obolariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OCHN</td>
+
+					<td>Ochnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OCHR</td>
+
+					<td>Ochranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OCTO</td>
+
+					<td>Octoknemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OENO</td>
+
+					<td>Oenotheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OFTI</td>
+
+					<td>Oftiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OLAC</td>
+
+					<td>Olacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OLE+</td>
+
+					<td>Oleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OLEA</td>
+
+					<td>Oleandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OLIN</td>
+
+					<td>Oliniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OLYR</td>
+
+					<td>Olyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ONAG</td>
+
+					<td>Onagraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ONCO</td>
+
+					<td>Oncothecaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ONOC</td>
+
+					<td>Onocleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ONOS</td>
+
+					<td>Onosmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPER</td>
+
+					<td>Operculariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHI</td>
+
+					<td>Ophioglossaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHP</td>
+
+					<td>Ophiopogonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHR</td>
+
+					<td>Ophiraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHU</td>
+
+					<td>Ophiuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHX</td>
+
+					<td>Ophioxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPHY</td>
+
+					<td>Ophrydaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPIL</td>
+
+					<td>Opiliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPOR</td>
+
+					<td>Oporanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OPUN</td>
+
+					<td>Opuntiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORCH</td>
+
+					<td>Orchidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORNI</td>
+
+					<td>Ornithogalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORNR</td>
+
+					<td>Ornithropaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OROB</td>
+
+					<td>Orobanchaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORON</td>
+
+					<td>Orontiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORTE</td>
+
+					<td>Ortegaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ORYZ</td>
+
+					<td>Oryzaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OSMU</td>
+
+					<td>Osmundaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OSYR</td>
+
+					<td>Osyridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OXAL</td>
+
+					<td>Oxalidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OXYC</td>
+
+					<td>Oxycoccaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OXYL</td>
+
+					<td>Oxycladaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>OXYS</td>
+
+					<td>Oxystylidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PACH</td>
+
+					<td>Pachysandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PACO</td>
+
+					<td>Pacouriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAEO</td>
+
+					<td>Paeoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAGA</td>
+
+					<td>Pagamaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAIV</td>
+
+					<td>Paivaeusaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PALM</td>
+
+					<td>Palmae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PANC</td>
+
+					<td>Pancratiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAND</td>
+
+					<td>Pandaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PANG</td>
+
+					<td>Pangiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PANI</td>
+
+					<td>Panicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PANN</td>
+
+					<td>Pandanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAPA</td>
+
+					<td>Papaveraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAPI</td>
+
+					<td>Papilionaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAPP</td>
+
+					<td>Pappophoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAPY</td>
+
+					<td>Papyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARA</td>
+
+					<td>Paracryphiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARD</td>
+
+					<td>Paridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARE</td>
+
+					<td>Parietariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARI</td>
+
+					<td>Parianaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARK</td>
+
+					<td>Parkeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARN</td>
+
+					<td>Parnassiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARO</td>
+
+					<td>Paronychiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARP</td>
+
+					<td>Paropsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARR</td>
+
+					<td>Parrotiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PARS</td>
+
+					<td>Parasitaxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PART</td>
+
+					<td>Partheniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PASP</td>
+
+					<td>Paspalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PASS</td>
+
+					<td>Passifloraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAST</td>
+
+					<td>Pastinacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAUL</td>
+
+					<td>Paulowniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAUN</td>
+
+					<td>Paulliniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PAVI</td>
+
+					<td>Paviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PECT</td>
+
+					<td>Pectiantiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PEDA</td>
+
+					<td>Pedaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PEDI</td>
+
+					<td>Pedicularidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PEGA</td>
+
+					<td>Peganaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PELI</td>
+
+					<td>Peliosanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PELL</td>
+
+					<td>Pellicieraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENA</td>
+
+					<td>Penaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENC</td>
+
+					<td>Pentaphylacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PEND</td>
+
+					<td>Pentadiplandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENG</td>
+
+					<td>Pentaphragmataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENN</td>
+
+					<td>Pennantiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENP</td>
+
+					<td>Pentapetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENS</td>
+
+					<td>Pentastemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PENT</td>
+
+					<td>Penthoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PEPE</td>
+
+					<td>Peperomiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PER+</td>
+
+					<td>Peraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERA</td>
+
+					<td>Peranemataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERC</td>
+
+					<td>Persicariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERD</td>
+
+					<td>Perdiciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERI</td>
+
+					<td>Peridiscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERP</td>
+
+					<td>Periplocaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERS</td>
+
+					<td>Perseaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PERT</td>
+
+					<td>Peripterygiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PETE</td>
+
+					<td>Petermanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PETI</td>
+
+					<td>Petiveriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PETR</td>
+
+					<td>Petreaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PETS</td>
+
+					<td>Petrosaviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHAD</td>
+
+					<td>Phalaridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHAL</td>
+
+					<td>Phaleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHAN</td>
+
+					<td>Pharnaceaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHAR</td>
+
+					<td>Pharaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHAS</td>
+
+					<td>Phaseolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHEL</td>
+
+					<td>Phellinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHEP</td>
+
+					<td>Phelypaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHER</td>
+
+					<td>Pherosphaeraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHIC</td>
+
+					<td>Philocrenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHID</td>
+
+					<td>Philodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHIL</td>
+
+					<td>Philadelphaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHIP</td>
+
+					<td>Philippodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHIS</td>
+
+					<td>Philesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHIY</td>
+
+					<td>Philydraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHOD</td>
+
+					<td>Phoradendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHOE</td>
+
+					<td>Phoenicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHOR</td>
+
+					<td>Phormiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHRY</td>
+
+					<td>Phrymaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYA</td>
+
+					<td>Phyllanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYC</td>
+
+					<td>Phylicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYE</td>
+
+					<td>Phytelephantaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYG</td>
+
+					<td>Phylloglossaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYL</td>
+
+					<td>Phyllocladaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYN</td>
+
+					<td>Phyllonomaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYR</td>
+
+					<td>Phytocrenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYS</td>
+
+					<td>Physenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PHYT</td>
+
+					<td>Phytolaccaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PICD</td>
+
+					<td>Picridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PICE</td>
+
+					<td>Piceaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PICM</td>
+
+					<td>Picramniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PICR</td>
+
+					<td>Picrodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PILG</td>
+
+					<td>Pilgerodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PILO</td>
+
+					<td>Pilocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PILU</td>
+
+					<td>Pilulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PIMP</td>
+
+					<td>Pimpinellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PIN+</td>
+
+					<td>Pinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PING</td>
+
+					<td>Pinguiculaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PIPE</td>
+
+					<td>Piperaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PIRI</td>
+
+					<td>Piriquetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PISC</td>
+
+					<td>Pistaciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PISO</td>
+
+					<td>Pisoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PIST</td>
+
+					<td>Pistiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PITT</td>
+
+					<td>Pittosporaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAA</td>
+
+					<td>Plagianthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAC</td>
+
+					<td>Platyceriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAG</td>
+
+					<td>Plagiogyriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAL</td>
+
+					<td>Platycladaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAM</td>
+
+					<td>Platyspermataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAN</td>
+
+					<td>Plantaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAP</td>
+
+					<td>Plagiopteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAR</td>
+
+					<td>Platycaryaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAS</td>
+
+					<td>Platystemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAT</td>
+
+					<td>Platanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLAZ</td>
+
+					<td>Platyzomataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLEC</td>
+
+					<td>Plectroniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLER</td>
+
+					<td>Pleurisanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLEU</td>
+
+					<td>Pleurosoriopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLOC</td>
+
+					<td>Plocospermataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLUM</td>
+
+					<td>Plumbaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PLUR</td>
+
+					<td>Plumeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PO++</td>
+
+					<td>Poaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PODC</td>
+
+					<td>Podocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PODO</td>
+
+					<td>Podoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PODP</td>
+
+					<td>Podophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PODS</td>
+
+					<td>Podostemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLA</td>
+
+					<td>Polygonanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLC</td>
+
+					<td>Polycnemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLE</td>
+
+					<td>Polemoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLG</td>
+
+					<td>Polygonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLI</td>
+
+					<td>Poliothyrsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLL</td>
+
+					<td>Polygalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLO</td>
+
+					<td>Polyosmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLP</td>
+
+					<td>Polpodaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLR</td>
+
+					<td>Polycarpaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLT</td>
+
+					<td>Polygonataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POLY</td>
+
+					<td>Polypodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PONT</td>
+
+					<td>Pontederiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PORA</td>
+
+					<td>Poranaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PORL</td>
+
+					<td>Portulacariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PORN</td>
+
+					<td>Porantheraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PORT</td>
+
+					<td>Portulacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POSI</td>
+
+					<td>Posidoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTA</td>
+
+					<td>Potaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTE</td>
+
+					<td>Potentillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTH</td>
+
+					<td>Pothaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTM</td>
+
+					<td>Potamogetonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTR</td>
+
+					<td>Poteriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>POTT</td>
+
+					<td>Pottingeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PRIM</td>
+
+					<td>Primulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PRIO</td>
+
+					<td>Prioniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PRIT</td>
+
+					<td>Prionotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PROC</td>
+
+					<td>Prockiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PROT</td>
+
+					<td>Proteaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PRUM</td>
+
+					<td>Prumnopityaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PRUN</td>
+
+					<td>Prunaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSEL</td>
+
+					<td>Pseliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSEP</td>
+
+					<td>Pseudophoenicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSEU</td>
+
+					<td>Pseudanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSIL</td>
+
+					<td>Psilotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSIT</td>
+
+					<td>Psittacanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSIX</td>
+
+					<td>Psiloxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSYC</td>
+
+					<td>Psychotriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PSYL</td>
+
+					<td>Psylliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTAE</td>
+
+					<td>Ptaeroxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTED</td>
+
+					<td>Pteridiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTEL</td>
+
+					<td>Pteleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTEN</td>
+
+					<td>Pterisanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTEP</td>
+
+					<td>Pteridophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTER</td>
+
+					<td>Pteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PTES</td>
+
+					<td>Pterostemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PUNI</td>
+
+					<td>Punicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PUTR</td>
+
+					<td>Putranjivaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PYR+</td>
+
+					<td>Pyraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>PYRO</td>
+
+					<td>Pyrolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>QUAS</td>
+
+					<td>Quassiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>QUER</td>
+
+					<td>Quercaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>QUII</td>
+
+					<td>Quiinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>QUIL</td>
+
+					<td>Quillajaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>QUIN</td>
+
+					<td>Quintiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RAFF</td>
+
+					<td>Rafflesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RAMO</td>
+
+					<td>Ramondaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RAND</td>
+
+					<td>Randiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RANU</td>
+
+					<td>Ranunculaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RANZ</td>
+
+					<td>Ranzaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RAPA</td>
+
+					<td>Rapateaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RAPH</td>
+
+					<td>Raphanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>REAU</td>
+
+					<td>Reaumuriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RESE</td>
+
+					<td>Resedaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>REST</td>
+
+					<td>Restionaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RETZ</td>
+
+					<td>Retziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHAB</td>
+
+					<td>Rhabdodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHAD</td>
+
+					<td>Rhapidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHAM</td>
+
+					<td>Rhamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHAP</td>
+
+					<td>Rhaptopetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHEX</td>
+
+					<td>Rhexiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHIN</td>
+
+					<td>Rhinanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHIP</td>
+
+					<td>Rhipogonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHIZ</td>
+
+					<td>Rhizophoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHO+</td>
+
+					<td>Rhoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOD</td>
+
+					<td>Rhodoleiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOI</td>
+
+					<td>Rhoipteleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOL</td>
+
+					<td>Rhodolaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHON</td>
+
+					<td>Rhododendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOO</td>
+
+					<td>Rhodiolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOP</td>
+
+					<td>Rhopalocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOR</td>
+
+					<td>Rhodoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHOT</td>
+
+					<td>Rhodotypaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHYN</td>
+
+					<td>Rhynchocalycaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RHYT</td>
+
+					<td>Rhynchothecaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RIBE</td>
+
+					<td>Ribesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RICI</td>
+
+					<td>Ricinocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RICN</td>
+
+					<td>Ricinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RIVI</td>
+
+					<td>Rivinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ROBI</td>
+
+					<td>Robiniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RORI</td>
+
+					<td>Roridulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ROS+</td>
+
+					<td>Rosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ROUS</td>
+
+					<td>Rousseaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ROXB</td>
+
+					<td>Roxburghiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RUBI</td>
+
+					<td>Rubiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RUMI</td>
+
+					<td>Rumicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RUPP</td>
+
+					<td>Ruppiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RUSC</td>
+
+					<td>Ruscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>RUT+</td>
+
+					<td>Rutaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SABA</td>
+
+					<td>Sabalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SABC</td>
+
+					<td>Sabiceaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SABI</td>
+
+					<td>Sabiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SABU</td>
+
+					<td>Sabulinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SACC</td>
+
+					<td>Saccifoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SACH</td>
+
+					<td>Saccharaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAG+</td>
+
+					<td>Sagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAGI</td>
+
+					<td>Saginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAGO</td>
+
+					<td>Sagoneaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALA</td>
+
+					<td>Salazariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALC</td>
+
+					<td>Salaciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALD</td>
+
+					<td>Salvadoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALI</td>
+
+					<td>Salicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALN</td>
+
+					<td>Salviniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALP</td>
+
+					<td>Salpiglossidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALR</td>
+
+					<td>Salicorniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALS</td>
+
+					<td>Salsolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALV</td>
+
+					<td>Salviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SALX</td>
+
+					<td>Salaxidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAMB</td>
+
+					<td>Sambucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAMO</td>
+
+					<td>Samolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAMY</td>
+
+					<td>Samydaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SANG</td>
+
+					<td>Sanguisorbaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SANI</td>
+
+					<td>Saniculaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SANO</td>
+
+					<td>Santolinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SANS</td>
+
+					<td>Sansevieriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SANT</td>
+
+					<td>Santalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAPI</td>
+
+					<td>Sapindaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAPO</td>
+
+					<td>Sapotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARB</td>
+
+					<td>Sarcobataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARC</td>
+
+					<td>Sarcocaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARG</td>
+
+					<td>Sargentodoxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARL</td>
+
+					<td>Sarcolaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARP</td>
+
+					<td>Sarcophytaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARR</td>
+
+					<td>Sarraceniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SARS</td>
+
+					<td>Sarcospermataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SART</td>
+
+					<td>Sarcostigmataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAUA</td>
+
+					<td>Saurauiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAUR</td>
+
+					<td>Saururaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAUV</td>
+
+					<td>Sauvagesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAXE</td>
+
+					<td>Saxegothaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SAXI</td>
+
+					<td>Saxifragaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCAB</td>
+
+					<td>Scabiosaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCAE</td>
+
+					<td>Scaevolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCAN</td>
+
+					<td>Scandicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCEP</td>
+
+					<td>Scepaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHA</td>
+
+					<td>Schizolaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHE</td>
+
+					<td>Scheuchzeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHI</td>
+
+					<td>Schisandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHL</td>
+
+					<td>Schlegeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHN</td>
+
+					<td>Schinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHO</td>
+
+					<td>Schoepfiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHP</td>
+
+					<td>Schizopetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHR</td>
+
+					<td>Schreberaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCHZ</td>
+
+					<td>Schizaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCIA</td>
+
+					<td>Sciadopityaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCIL</td>
+
+					<td>Scillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCIR</td>
+
+					<td>Scirpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCLA</td>
+
+					<td>Scleranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCLE</td>
+
+					<td>Sclerophylacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCLR</td>
+
+					<td>Scleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCOL</td>
+
+					<td>Scoliopaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCOR</td>
+
+					<td>Scorodocarpaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCRO</td>
+
+					<td>Scrophulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCUT</td>
+
+					<td>Scutellariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCYB</td>
+
+					<td>Scybaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCYP</td>
+
+					<td>Scyphostegiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SCYT</td>
+
+					<td>Scytopetalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SEBE</td>
+
+					<td>Sebestenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SED+</td>
+
+					<td>Sedaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SEGU</td>
+
+					<td>Seguieriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SELA</td>
+
+					<td>Selaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SELI</td>
+
+					<td>Selinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SELL</td>
+
+					<td>Selaginellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SEMP</td>
+
+					<td>Sempervivaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SENE</td>
+
+					<td>Senecionaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SEQU</td>
+
+					<td>Sequoiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SERR</td>
+
+					<td>Serratulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SESA</td>
+
+					<td>Sesamaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SESL</td>
+
+					<td>Sesleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SESU</td>
+
+					<td>Sesuviaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SETC</td>
+
+					<td>Setchellanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIBT</td>
+
+					<td>Sibthorpiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SID+</td>
+
+					<td>Sidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SILE</td>
+
+					<td>Silenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SILR</td>
+
+					<td>Sileraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIMA</td>
+
+					<td>Simaroubaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIMB</td>
+
+					<td>Simabaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIMM</td>
+
+					<td>Simmondsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SINF</td>
+
+					<td>Sinofranchetiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SINO</td>
+
+					<td>Sinopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIPA</td>
+
+					<td>Siparunaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIPH</td>
+
+					<td>Siphonodontaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SIPT</td>
+
+					<td>Siphonanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SISY</td>
+
+					<td>Sisymbriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SLAD</td>
+
+					<td>Sladeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SMEA</td>
+
+					<td>Smeathmanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SMIL</td>
+
+					<td>Smilacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SMYR</td>
+
+					<td>Smyrniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SOLA</td>
+
+					<td>Solanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SONN</td>
+
+					<td>Sonneratiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SOPH</td>
+
+					<td>Sophoraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SORA</td>
+
+					<td>Soramiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SORB</td>
+
+					<td>Sorbaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SOUL</td>
+
+					<td>Soulameaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPAM</td>
+
+					<td>Sparmanniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPAN</td>
+
+					<td>Spartinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPAR</td>
+
+					<td>Sparganiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPAT</td>
+
+					<td>Spatheliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPEM</td>
+
+					<td>Spermacoceaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPER</td>
+
+					<td>Spergulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPHA</td>
+
+					<td>Sphaerosepalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPHE</td>
+
+					<td>Sphenocleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPHS</td>
+
+					<td>Sphenostemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPIA</td>
+
+					<td>Spiraeanthemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPIG</td>
+
+					<td>Spigeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPIN</td>
+
+					<td>Spinaciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPIR</td>
+
+					<td>Spiraeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPON</td>
+
+					<td>Spondiadaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SPOR</td>
+
+					<td>Sporobolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAC</td>
+
+					<td>Stachyuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAD</td>
+
+					<td>Stachydaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAK</td>
+
+					<td>Stackhousiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAL</td>
+
+					<td>Stapeliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAN</td>
+
+					<td>Stangeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAP</td>
+
+					<td>Staphyleaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAT</td>
+
+					<td>Staticaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STAY</td>
+
+					<td>Stanleyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STED</td>
+
+					<td>Stenomeridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STEG</td>
+
+					<td>Stegnospermataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STEL</td>
+
+					<td>Stellariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STEM</td>
+
+					<td>Stemonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STEN</td>
+
+					<td>Stenochlaenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STER</td>
+
+					<td>Sterculiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STEU</td>
+
+					<td>Stemonuraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STIB</td>
+
+					<td>Stilbaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STIL</td>
+
+					<td>Stilaginaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STIP</td>
+
+					<td>Stipaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRA</td>
+
+					<td>Strasburgeriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRB</td>
+
+					<td>Strombosiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRE</td>
+
+					<td>Strelitziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRO</td>
+
+					<td>Stromatopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRP</td>
+
+					<td>Streptochaetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRT</td>
+
+					<td>Stratiotaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRU</td>
+
+					<td>Strumariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STRY</td>
+
+					<td>Strychnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STYB</td>
+
+					<td>Stylobasiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STYC</td>
+
+					<td>Stylocerataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STYL</td>
+
+					<td>Stylidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STYP</td>
+
+					<td>Stypheliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>STYR</td>
+
+					<td>Styracaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SURI</td>
+
+					<td>Surianaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SWAR</td>
+
+					<td>Swartziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SWIE</td>
+
+					<td>Swieteniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SYMP</td>
+
+					<td>Symplocaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SYMR</td>
+
+					<td>Symphoremataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SYNE</td>
+
+					<td>Synechanthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>SYRI</td>
+
+					<td>Syringaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TACC</td>
+
+					<td>Taccaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAEN</td>
+
+					<td>Taenitidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAIW</td>
+
+					<td>Taiwaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAKH</td>
+
+					<td>Takhtajaniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TALI</td>
+
+					<td>Talinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAM+</td>
+
+					<td>Tamaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAMA</td>
+
+					<td>Tamaricaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAMD</td>
+
+					<td>Tamarindaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAMN</td>
+
+					<td>Tamnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TANA</td>
+
+					<td>Tanacetaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAPI</td>
+
+					<td>Tapisciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAX+</td>
+
+					<td>Taxaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TAXO</td>
+
+					<td>Taxodiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TECO</td>
+
+					<td>Tecophilaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TECT</td>
+
+					<td>Tectariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TELE</td>
+
+					<td>Telephiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TEPU</td>
+
+					<td>Tepuianthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TERM</td>
+
+					<td>Terminaliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TERN</td>
+
+					<td>Ternstroemiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETD</td>
+
+					<td>Tetradiclidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETG</td>
+
+					<td>Tetragoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETH</td>
+
+					<td>Tetrathecaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETL</td>
+
+					<td>Tetraclinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETM</td>
+
+					<td>Tetramelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETN</td>
+
+					<td>Tetrachondraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETP</td>
+
+					<td>Tetracarpaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETR</td>
+
+					<td>Tetracentraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETS</td>
+
+					<td>Tetrastylidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TETT</td>
+
+					<td>Tetrameristaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THAL</td>
+
+					<td>Thalictraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THAS</td>
+
+					<td>Thalassiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THE+</td>
+
+					<td>Theaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THEB</td>
+
+					<td>Theobromataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THEL</td>
+
+					<td>Theligonaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THEM</td>
+
+					<td>Themidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THEO</td>
+
+					<td>Theophrastaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THEP</td>
+
+					<td>Thelypteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THES</td>
+
+					<td>Thesiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THIS</td>
+
+					<td>Thismiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THLA</td>
+
+					<td>Thlaspiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THO+</td>
+
+					<td>Thoaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THOM</td>
+
+					<td>Thomandersiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THUJ</td>
+
+					<td>Thujaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THUN</td>
+
+					<td>Thunbergiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THUP</td>
+
+					<td>Thujopsidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THUR</td>
+
+					<td>Thurniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THYM</td>
+
+					<td>Thymelaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>THYR</td>
+
+					<td>Thyrsopteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TICO</td>
+
+					<td>Ticodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TILE</td>
+
+					<td>Tillaeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TILI</td>
+
+					<td>Tiliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TILL</td>
+
+					<td>Tillandsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TIN+</td>
+
+					<td>Tinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TITH</td>
+
+					<td>Tithymalaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TMES</td>
+
+					<td>Tmesipteridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TOFI</td>
+
+					<td>Tofieldiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TORM</td>
+
+					<td>Tormentillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TORR</td>
+
+					<td>Torricelliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TORY</td>
+
+					<td>Torreyaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TOVA</td>
+
+					<td>Tovariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRAD</td>
+
+					<td>Tradescantiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRAG</td>
+
+					<td>Tragiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRAL</td>
+
+					<td>Trapellaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRAP</td>
+
+					<td>Trapaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TREM</td>
+
+					<td>Tremandraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TREW</td>
+
+					<td>Trewiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIB</td>
+
+					<td>Tribulaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIC</td>
+
+					<td>Trichomanaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRID</td>
+
+					<td>Trichopodaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIE</td>
+
+					<td>Tribelaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIF</td>
+
+					<td>Trifoliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIG</td>
+
+					<td>Trigoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIL</td>
+
+					<td>Trilliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIM</td>
+
+					<td>Trimeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIN</td>
+
+					<td>Triglochinaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIO</td>
+
+					<td>Triplobaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIP</td>
+
+					<td>Triplostegiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIR</td>
+
+					<td>Tricyrtidaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIS</td>
+
+					<td>Tristichaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIT</td>
+
+					<td>Triticaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TRIU</td>
+
+					<td>Triuridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TROC</td>
+
+					<td>Trochodendraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TROP</td>
+
+					<td>Tropaeolaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TULB</td>
+
+					<td>Tulbaghiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TULI</td>
+
+					<td>Tulipaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TUMB</td>
+
+					<td>Tumboaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TUPI</td>
+
+					<td>Tupistraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TURN</td>
+
+					<td>Turneraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TUSS</td>
+
+					<td>Tussilagaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>TYPH</td>
+
+					<td>Typhaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>UAPA</td>
+
+					<td>Uapacaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ULLU</td>
+
+					<td>Ullucaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ULM+</td>
+
+					<td>Ulmaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ULMA</td>
+
+					<td>Ulmariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>UMBE</td>
+
+					<td>Umbelliferae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>URTI</td>
+
+					<td>Urticaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>UTRI</td>
+
+					<td>Utriculariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>UVUL</td>
+
+					<td>Uvulariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VACC</td>
+
+					<td>Vacciniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VAHL</td>
+
+					<td>Vahliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VALE</td>
+
+					<td>Valerianaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VALL</td>
+
+					<td>Vallisneriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VANI</td>
+
+					<td>Vanillaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VELL</td>
+
+					<td>Velloziaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERA</td>
+
+					<td>Veratraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERB</td>
+
+					<td>Verbenaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERC</td>
+
+					<td>Vernicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERN</td>
+
+					<td>Vernoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERO</td>
+
+					<td>Veronicaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VERS</td>
+
+					<td>Verbascaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VIBU</td>
+
+					<td>Viburnaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VICI</td>
+
+					<td>Viciaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VINC</td>
+
+					<td>Vincaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VIOL</td>
+
+					<td>Violaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VISC</td>
+
+					<td>Viscaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VIT+</td>
+
+					<td>Vitaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VITI</td>
+
+					<td>Viticaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VITT</td>
+
+					<td>Vittariaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VIVI</td>
+
+					<td>Vivianiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>VOCH</td>
+
+					<td>Vochysiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WACH</td>
+
+					<td>Wachendorfiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WALL</td>
+
+					<td>Walleriaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WELG</td>
+
+					<td>Wellingtoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WELL</td>
+
+					<td>Wellstediaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WELW</td>
+
+					<td>Welwitschiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WILL</td>
+
+					<td>Willughbeiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WINT</td>
+
+					<td>Winteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WOLF</td>
+
+					<td>Wolffiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>WOOD</td>
+
+					<td>Woodsiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XANI</td>
+
+					<td>Xanthiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XANR</td>
+
+					<td>Xanthorrhoeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XANT</td>
+
+					<td>Xanthophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XANZ</td>
+
+					<td>Xanthorhizaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XERA</td>
+
+					<td>Xeranthemaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XERN</td>
+
+					<td>Xeronemataceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XERO</td>
+
+					<td>Xerophyllaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XIME</td>
+
+					<td>Ximeniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XIPH</td>
+
+					<td>Xiphidiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>XYRI</td>
+
+					<td>Xyridaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>YUCC</td>
+
+					<td>Yuccaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZAMI</td>
+
+					<td>Zamiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZANN</td>
+
+					<td>Zannichelliaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZANO</td>
+
+					<td>Zanoniaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZANT</td>
+
+					<td>Zanthoxylaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZE++</td>
+
+					<td>Zeaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZEPH</td>
+
+					<td>Zephyranthaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZING</td>
+
+					<td>Zingiberaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZIZI</td>
+
+					<td>Ziziphaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZOST</td>
+
+					<td>Zosteraceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZOYS</td>
+
+					<td>Zoysiaceae</td>
+
+				</tr>
+
+				<tr>
+
+					<td>ZYGO</td>
+
+					<td>Zygophyllaceae</td>
+
+				</tr>
+
+			</tbody>
+
+		</table>
+
+
+
+		<p class="footer"> Source: </p>
+
+		<p id="source1"><b>1.</b> Hunt Institute for Botanical Documentation </br>
+
+			<i>A Research Division of Carnegie Mellon University</i> </p>
+
+
+
+		<p id="source2"><b>2.</b> Comprehensive Scheme for Standardized Abbreviation of Usable Plant-Family Names and Type-Based Suprafamilial Names Compiled by Robert W. Kiger and James L. Reveal, this database is a scheme of four-character abbreviations for all properly
+
+			usable plant-family names known to have been published to date, and of two-character rank suffixes for coordinated abbreviation of type-based names at standard suprafamilial ranks.
+
+			<a href="http://huntbot.org/scheme/intro"> http://huntbot.org/scheme/intro </a>
+
+		</p>
+
+	</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+
+	//dynamic search function to filter table
+
+	function filterTable(event) {
+
+		var filter = event.target.value.toUpperCase();
+
+		var rows = document.querySelector("#familyTable").rows;
+
+		//loop through rows of the table
+
+		for (var i = 0; i < rows.length; i++) {
+
+			//create vars for first and second column
+
+			var firstCol = rows[i].cells[0].textContent.toUpperCase();
+
+			var secondCol = rows[i].cells[1].textContent.toUpperCase();
+
+			//make both columns searchable when typing in search terms, hence the OR statement
+
+			if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+
+				rows[i].style.display = "";
+
+			} else {
+
+				rows[i].style.display = "none";
+
+			}
+
+		}
+
+	}
+
+
+
+	document.querySelector('#filterInput').addEventListener('keyup', filterTable, false);
+
+
+
+	//on keyup event show message. Instruct user to hit enter button
+
+	function showMessage() {
+
+		var msg = document.getElementById('message');
+
+		msg.textContent = 'Clear search field by hitting ENTER or Backspace';
+
+		msg.setAttribute('style', 'color: #cc0000; font-style: italic; font-size: 14px');
+
+	}
+
+	//add event listener to execute showMessage function on keyup
+
+	document.querySelector('#filterInput').addEventListener('keyup', showMessage, false);
+
+</script>
+
+
+
+</html>
+
